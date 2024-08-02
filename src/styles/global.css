@@ -25,4 +25,18 @@
   --gray-100: #F4F1F2;
   --white: #FFFFFF;
   --gradient-base: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+
+  --ff-sans: "Oxygen", sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --text-transform: uppercase; /* only for --font-subtitle-md and --font-subtitle-sm */
+
+  --font-title-md: var(--fw-bold) 1.5rem/1.4 var(--ff-sans);
+  --font-title-sm: var(--fw-bold) 1.125rem/1.4 var(--ff-sans);
+  --font-subtitle-md: var(--fw-bold) 0.875rem/1.4 var(--ff-sans); /* and: --text-transform */
+  --font-subtitle-sm: var(--fw-bold) 0.75rem/1.4 var(--ff-sans); /* and: --text-transform */
+  --font-text-md: var(--fw-regular) 1rem/1.4 var(--ff-sans);
+  --font-text-sm: var(--fw-regular) 0.875rem/1.4 var(--ff-sans);
+  --font-text-xs: var(--fw-regular) 0.75rem/1.4 var(--ff-sans);
+
 }
