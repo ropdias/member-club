@@ -40,3 +40,29 @@
   --font-text-xs: var(--fw-regular) 0.75rem/1.4 var(--ff-sans);
 
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--gray-200);
+  overflow-x: hidden;
+}
+
+ul[role='list'] {
+  list-style: none;
+}
