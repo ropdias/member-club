@@ -18,15 +18,18 @@ module.exports = {
   devServer: {
     static: {
       directory: path.join(__dirname, 'dist'),
+      watch: true,  // Observa mudanças nos arquivos estáticos
     },
     port: 3000,
     open: true,
     liveReload: true,
+    watchFiles: ['src/**/*.html'], // Observa mudanças nos arquivos HTML
   },
 
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
+      filename: 'index.html', // Garante que o HTML seja gerado na pasta dist
     }),
     new CopyWebpackPlugin({
       patterns: [
