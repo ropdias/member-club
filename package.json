@@ -9,7 +9,7 @@
     "format": "prettier --write \"src/**/*.js\" \"test/**/*.js\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.js\" --fix",
     "server": "json-server --watch server.json --port 3333",
-    "dev": "webpack serve",
+    "dev": "webpack serve --config webpack.config.js",
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
@@ -27,8 +27,8 @@
     "html-webpack-plugin": "5.6.0",
     "mini-css-extract-plugin": "^2.9.0",
     "style-loader": "3.3.3",
-    "webpack": "5.89.0",
-    "webpack-cli": "5.1.4",
-    "webpack-dev-server": "4.15.1"
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
   }
 }
