@@ -1,11 +1,25 @@
 .header {
   border: 1px solid var(--pink);
+
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  max-width: 57rem;
+  width: 100%;
+
   & img[src*='logo'] {
     width: 7.25rem;
     height: 3.5rem;
+  }
+}
+
+@media (max-width: 57em) {
+  .header {
+    max-width: 21.9375rem;
+    min-width: 15.625rem;
+    width: min(calc(100% - 1.5rem), 21.9375rem);
+
+    margin: 0 0.75rem;
   }
 }

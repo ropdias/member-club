@@ -4,11 +4,22 @@
   column-gap: 1.5rem;
   row-gap: 1rem;
   align-items: flex-start;
+
+  max-width: 57rem;
+  width: 100%;
 }
 
-@media (width <= 57em) {
+@media (max-width: 57em) {
   .main {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    max-width: 21.9375rem;
+    min-width: 15.625rem;
+    width: min(calc(100% - 1.5rem), 21.9375rem);
+
+    margin: 0 0.75rem;
+    gap: 0.5rem;
   }
 }
