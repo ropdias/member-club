@@ -1,0 +1,13 @@
+.progress {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 1rem;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+@media (width <= 57em) {
+  .progress {
+    order: 3;
+  }
+}

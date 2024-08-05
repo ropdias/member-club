@@ -1,0 +1,13 @@
+.card {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 1rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+@media (width <= 57em) {
+  .card {
+    order: 2;
+  }
+}

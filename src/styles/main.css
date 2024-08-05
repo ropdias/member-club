@@ -1,0 +1,14 @@
+.main {
+  display: grid;
+  grid-template-columns: 20rem 1fr;
+  column-gap: 1.5rem;
+  row-gap: 1rem;
+  align-items: flex-start;
+}
+
+@media (width <= 57em) {
+  .main {
+    display: flex;
+    flex-direction: column;
+  }
+}

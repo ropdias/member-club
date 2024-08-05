@@ -1,0 +1,14 @@
+.user {
+  background: var(--gray-100);
+  border: 1px solid var(--gray-300);
+  border-radius: 1rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  max-width: 320px;
+}
+
+@media (width <= 57em) {
+  .user {
+    order: 1;
+  }
+}
