@@ -29,9 +29,9 @@
   }
 }
 
-@media (width <= 57em) {
+@media (max-width: 57em) {
   .user {
     order: 1;
-    width: 21.9375rem;
+    width: 100%;
   }
 }
