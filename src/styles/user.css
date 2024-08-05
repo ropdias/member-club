@@ -19,12 +19,12 @@
 
     & h1 {
       font: var(--font-title-sm);
-      color: var(--gray-600)
+      color: var(--gray-600);
     }
 
     & p {
       font: var(--font-text-xs);
-      color: var(--gray-500)
+      color: var(--gray-500);
     }
   }
 }

@@ -4,10 +4,100 @@
   border-radius: 1rem;
   grid-column: 2/3;
   grid-row: 2/3;
+  padding: 0 2rem;
+  height: 7.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+
+  & .progress-gift {
+    background-color: var(--gray-200);
+    border-radius: 999px;
+    width: 4.5rem;
+    height: 4.5rem;
+    position: relative;
+
+    & img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  & .progress-data {
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+
+    & .progress-remaining {
+      height: 2.125rem;
+
+      & strong {
+        font: var(--font-title-md);
+        color: var(--gray-600);
+      }
+  
+      & span {
+        font: var(--font-text-md);
+        color: var(--gray-500);
+      }
+    }
+
+    & .progress-bar {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+
+      & div:first-child {
+        width: 21.9375rem;
+        position: relative;
+      }
+
+      & .progress-bar-total {
+        background-color: var(--gray-300);
+        border-radius: 1rem;
+        height: 0.5rem;
+      }
+
+      & .progress-bar-progress {
+        background: var(--gradient-base);
+        border-radius: 1rem;
+        height: 0.5rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 63%;
+      }
+
+      & span {
+        font: var(--font-text-xs);
+        color: var(--gray-500);
+        flex: 0 0 2.3125rem;
+      }
+    }
+  }
 }
 
 @media (width <= 57em) {
   .progress {
     order: 3;
+    padding: 1rem 1.25rem;
+    width: 21.9375rem;
+
+    & .progress-gift {
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+
+    & .progress-data {  
+      & .progress-bar {  
+        & div:first-child {
+          width: 11.375rem;
+        }
+      }
+    }
   }
 }
