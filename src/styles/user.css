@@ -4,11 +4,34 @@
   border-radius: 1rem;
   grid-column: 1/2;
   grid-row: 1/2;
-  max-width: 320px;
+  padding: 1rem;
+  display: flex;
+  gap: 1rem;
+
+  width: 20rem;
+  height: 5.625rem;
+
+  & div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.25rem;
+
+    & h1 {
+      font: var(--font-title-sm);
+      color: var(--gray-600)
+    }
+
+    & p {
+      font: var(--font-text-xs);
+      color: var(--gray-500)
+    }
+  }
 }
 
 @media (width <= 57em) {
   .user {
     order: 1;
+    width: 21.9375rem;
   }
 }
