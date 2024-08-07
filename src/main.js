@@ -5,3 +5,6 @@ import './libs/dayjs.js'
 
 // CSS
 import './styles/index.css'
+
+// JS
+import './modules/card-id-input-format.js'
