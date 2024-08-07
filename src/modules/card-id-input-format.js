@@ -1,4 +1,5 @@
 const cardId = document.getElementById('card-id')
+const cardIdButton = document.getElementById('header-id-input-button')
 
 if (cardId) {
   cardId.oninput = () => {
@@ -15,6 +16,12 @@ if (cardId) {
 
     // Set the formatted value back to the input
     cardId.value = value
+
+    if (value.length === 15) {
+      cardIdButton.disabled = false
+    } else {
+      cardIdButton.disabled = true
+    }
   }
 } else {
   console.error('One or more elements were not found!')
