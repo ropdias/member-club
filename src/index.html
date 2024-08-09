@@ -11,21 +11,23 @@
   <body>
     <header class="header">
       <img src="./assets/logo.png" alt="logo">
-      <div class="header-id-input">
+      <form id="header-id-form" class="header-id-input">
         <input
           type="text"
           id="card-id"
           name="card-id"
           placeholder="ID do cartão"
         />
-        <button class="header-id-input-arrow" id="header-id-input-button" disabled>
+        <button type="submit" class="header-id-input-arrow" id="header-id-input-button" disabled>
           <img src="./assets/icons/arrow-elbow-down-left.svg" alt="card-id-button" />
         </button>
-      </div>
+      </form>
     </header>
     <main class="main">
       <section class="user">
-        <img src="./assets/default-avatar.svg" alt="avatar" />
+        <div class="user-avatar-container">
+          <img src="./assets/default-avatar.svg" alt="avatar" />
+        </div>
         <div>
           <h1>Natália Miranda</h1>
           <p>Cliente desde 18/09/2023</p>
