@@ -70,6 +70,18 @@ ul[role='list'] {
   list-style: none;
 }
 
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0px 1000px var(--gray-300) inset !important;
+  -webkit-text-fill-color: var(--gray-700) !important;
+}
+
+input:-moz-autofill {
+  background-color: transparent !important;
+  box-shadow: 0 0 0px 1000px var(--gray-300) inset !important;
+  -moz-text-fill-color: var(--gray-700) !important;
+}
+
 @media (max-width: 57em) {
   body {
     overflow-y: auto;
