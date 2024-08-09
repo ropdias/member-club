@@ -8,4 +8,4 @@ import './styles/index.css'
 
 // JS
 import './modules/card-id-input-format.js'
-import './modules/load-user-info.js'
+import './modules/load-client-info.js'
