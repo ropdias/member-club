@@ -3,7 +3,7 @@
     {
       "id": "124-537-835-230",
       "name": "Natália Miranda",
-      "imgUrl": "bc862fc4-90fe-45c7-9606-9e80142dd825-124-537-835-230.jpg",
+      "imgKey": "bc862fc4-90fe-45c7-9606-9e80142dd825-124-537-835-230.jpg",
       "clientSince": "18/09/2023",
       "appointmentHistory": [
         {"date": "29/04/2024", "time": "18:30"},
@@ -22,7 +22,7 @@
     {
       "id": "207-245-699-104",
       "name": "Rhaenyra Targaryen",
-      "imgUrl": "95e786b3-3a6b-4ac0-83fd-73b5f52863d8-207-245-699-104.jpg",
+      "imgKey": "95e786b3-3a6b-4ac0-83fd-73b5f52863d8-207-245-699-104.jpg",
       "clientSince": "12/04/2023",
       "appointmentHistory": [
         {"date": "01/05/2024", "time": "10:00"},
@@ -39,7 +39,7 @@
     {
       "id": "123-456-789-123",
       "name": "Rodrigo P. Dias",
-      "imgUrl": "c3cf219e-9a55-46f3-bcc3-40cf1b4038f1-123-456-789-123.jpg",
+      "imgKey": "c3cf219e-9a55-46f3-bcc3-40cf1b4038f1-123-456-789-123.jpg",
       "clientSince": "15/07/2023",
       "appointmentHistory": [
         {"date": "22/04/2024", "time": "16:00"},
