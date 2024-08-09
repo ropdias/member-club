@@ -12,6 +12,12 @@ const historyHeadertotalCuts = document.getElementById(
 const historyList = document.getElementById('history-list')
 const cardSlots = document.getElementById('card-slots')
 const cardHeaderTextSpan = document.getElementById('card-header-text-span')
+const progressRemainingNumber = document.getElementById(
+  'progress-remaining-number',
+)
+const progressRemainingText = document.getElementById('progress-remaining-text')
+const progressBarProgress = document.getElementById('progress-bar-progress')
+const progressBarText = document.getElementById('progress-bar-text')
 
 const ordinals = [
   'primeiro',
@@ -94,8 +100,6 @@ if (form && input) {
     cardSlots.innerHTML = ''
 
     for (let i = 0; i < totalCuts; i++) {
-      console.log(i)
-
       const cardItem = document.createElement('div')
       cardItem.classList.add('card-item')
       const img = document.createElement('img')
@@ -118,7 +122,10 @@ if (form && input) {
       cardSlots.appendChild(cardItem)
     }
 
-    console.log(clientData)
+    progressRemainingNumber.innerHTML = cutsRemaining
+    progressRemainingText.innerHTML = `corte${cutsRemaining === 1 ? '' : 's'} restante${cutsRemaining === 1 ? '' : 's'}`
+    progressBarProgress.style.width = `${(totalCuts / cutsNeeded) * 100}%`
+    progressBarText.innerHTML = `${totalCuts} de ${cutsNeeded}`
   }
 } else {
   console.error('One or more elements were not found!')
