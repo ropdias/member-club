@@ -11,6 +11,14 @@ if (form && input) {
 
     const clientData = await clientFindById({ id })
 
+    if (clientData.length === 0) {
+      input.value = ''
+      input.placeholder = 'ID não encontrado !'
+      return
+    } else {
+      input.placeholder = 'ID do cartão'
+    }
+
     console.log(clientData)
   }
 } else {
