@@ -2,6 +2,7 @@ import { clientFindById } from '../services/client-find-by-id.js'
 
 const form = document.getElementById('header-id-form')
 const input = document.getElementById('card-id')
+const userAvatar = document.getElementById('user-avatar-img')
 
 if (form && input) {
   form.onsubmit = async (event) => {
@@ -16,6 +17,8 @@ if (form && input) {
       alert('ID não encontrado ! Tente novamente !')
       return
     }
+
+    userAvatar.src = `./assets/avatars/${clientData[0].imgKey}`
 
     console.log(clientData)
   }
