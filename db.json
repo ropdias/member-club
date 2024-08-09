@@ -32,8 +32,8 @@
       ],
       "loyaltyCard": {
         "totalCuts": 4,
-        "cutsNeeded": 10,
-        "cutsRemaining": 6
+        "cutsNeeded": 8,
+        "cutsRemaining": 4
       }
     },
     {
@@ -48,9 +48,9 @@
         {"date": "20/12/2023", "time": "15:15"}
       ],
       "loyaltyCard": {
-        "totalCuts": 5,
-        "cutsNeeded": 8,
-        "cutsRemaining": 3
+        "totalCuts": 10,
+        "cutsNeeded": 10,
+        "cutsRemaining": 0
       }
     }
   ]

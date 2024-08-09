@@ -6,8 +6,25 @@ const userAvatar = document.getElementById('user-avatar-img')
 const userName = document.getElementById('user-name')
 const userClientSince = document.getElementById('user-client-since')
 const cardHeaderIdTag = document.getElementById('card-header-id-tag')
-const totalCuts = document.getElementById('history-header-total-cuts')
+const historyHeadertotalCuts = document.getElementById(
+  'history-header-total-cuts',
+)
 const historyList = document.getElementById('history-list')
+const cardSlots = document.getElementById('card-slots')
+const cardHeaderTextSpan = document.getElementById('card-header-text-span')
+
+const ordinals = [
+  'primeiro',
+  'segundo',
+  'terceiro',
+  'quarto',
+  'quinto',
+  'sexto',
+  'sétimo',
+  'oitavo',
+  'nono',
+  'décimo',
+]
 
 if (form && input) {
   form.onsubmit = async (event) => {
@@ -23,12 +40,16 @@ if (form && input) {
       return
     }
 
+    const totalCuts = clientData[0].loyaltyCard.totalCuts
+    const cutsNeeded = clientData[0].loyaltyCard.cutsNeeded
+    const cutsRemaining = clientData[0].loyaltyCard.cutsRemaining
+
     userAvatar.src = `./assets/avatars/${clientData[0].imgKey}`
     userName.innerHTML = clientData[0].name
     userClientSince.innerHTML = `Cliente desde ${clientData[0].clientSince}`
     cardHeaderIdTag.innerHTML = `ID: ${clientData[0].id}`
 
-    totalCuts.innerHTML = `${clientData[0].loyaltyCard.totalCuts} cortes`
+    historyHeadertotalCuts.innerHTML = `${totalCuts} cortes`
 
     // <li class="history-list-item">
     //   <div class="history-list-item-data">
@@ -66,6 +87,36 @@ if (form && input) {
       item.append(itemData, itemCheck)
       historyList.appendChild(item)
     })
+
+    cardHeaderTextSpan.innerHTML = `Ao fazer cortes de cabelo, o ${ordinals[cutsNeeded - 1]} sai de graça!`
+
+    // Cleaning cardSlots:
+    cardSlots.innerHTML = ''
+
+    for (let i = 0; i < totalCuts; i++) {
+      console.log(i)
+
+      const cardItem = document.createElement('div')
+      cardItem.classList.add('card-item')
+      const img = document.createElement('img')
+      img.src = './assets/pin-check.png'
+      img.alt = 'pin-check'
+      cardItem.appendChild(img)
+
+      cardSlots.appendChild(cardItem)
+    }
+
+    for (let i = 0; i < cutsRemaining; i++) {
+      const cardItem = document.createElement('div')
+      cardItem.classList.add('card-item')
+      if (i === cutsRemaining - 1) {
+        const lastImg = document.createElement('img')
+        lastImg.src = './assets/icons/gift-solid.svg'
+        lastImg.alt = 'gift-solid'
+        cardItem.appendChild(lastImg)
+      }
+      cardSlots.appendChild(cardItem)
+    }
 
     console.log(clientData)
   }
