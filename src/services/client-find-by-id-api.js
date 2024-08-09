@@ -12,5 +12,6 @@ export async function clientFindByIdAPI({ id }) {
   } catch (error) {
     console.log(error)
     alert('Não foi possível buscar as informações do cliente.')
+    return null
   }
 }

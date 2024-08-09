@@ -40,7 +40,7 @@ if (form && input) {
 
     const clientData = await clientFindById({ id })
 
-    if (clientData.length === 0) {
+    if (!clientData || clientData.length === 0) {
       input.value = ''
       alert('ID não encontrado ! Tente novamente !')
       return
