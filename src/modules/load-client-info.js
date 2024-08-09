@@ -13,10 +13,8 @@ if (form && input) {
 
     if (clientData.length === 0) {
       input.value = ''
-      input.placeholder = 'ID não encontrado !'
+      alert('ID não encontrado ! Tente novamente !')
       return
-    } else {
-      input.placeholder = 'ID do cartão'
     }
 
     console.log(clientData)
