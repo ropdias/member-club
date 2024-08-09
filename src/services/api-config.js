@@ -4,4 +4,3 @@ export const apiConfig = {
 
 // Configuration to choose between API and localStorage
 export const useAPI = true // Change to false to use localStorage
-console.log(`Prod: ${process.env.NODE_ENV === 'production' ? 'true' : 'false'}`)
