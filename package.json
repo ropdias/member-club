@@ -8,7 +8,7 @@
   "scripts": {
     "format": "prettier --write \"src/**/*.js\" \"test/**/*.js\"",
     "lint": "eslint \"{src,apps,libs,test}/**/*.js\" --fix",
-    "server": "json-server --watch server.json --port 3333",
+    "server": "json-server --watch db.json --port 3333",
     "dev": "webpack serve --config webpack.config.js",
     "build": "webpack --config webpack.config.js"
   },
