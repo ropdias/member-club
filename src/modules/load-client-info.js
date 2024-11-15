@@ -19,6 +19,8 @@ const progressRemainingText = document.getElementById('progress-remaining-text')
 const progressBarProgress = document.getElementById('progress-bar-progress')
 const progressBarText = document.getElementById('progress-bar-text')
 
+const modal = document.getElementById('modal')
+
 const ordinals = [
   'primeiro',
   'segundo',
@@ -126,6 +128,10 @@ if (form && input) {
     progressRemainingText.innerHTML = `corte${cutsRemaining === 1 ? '' : 's'} restante${cutsRemaining === 1 ? '' : 's'}`
     progressBarProgress.style.width = `${(totalCuts / cutsNeeded) * 100}%`
     progressBarText.innerHTML = `${totalCuts} de ${cutsNeeded}`
+
+    if (cutsRemaining <= 0) {
+      modal.style.display = 'block'
+    }
   }
 } else {
   console.error('One or more elements were not found!')

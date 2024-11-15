@@ -9,3 +9,4 @@ import './styles/index.css'
 // JS
 import './modules/card-id-input-format.js'
 import './modules/load-client-info.js'
+import './modules/modal.js'
