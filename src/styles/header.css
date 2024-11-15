@@ -14,7 +14,7 @@
     height: 3.5rem;
   }
 
-  & .header-id-input {
+  & .header-id-form {
     border: 2px solid transparent;
     outline: 1px solid var(--gray-400);
     background: var(--gray-300);
@@ -47,7 +47,7 @@
       color: var(--gray-700);
     }
 
-    & .header-id-input-arrow {
+    & .header-id-input-button {
       all: unset;
       cursor: pointer;
 
@@ -96,7 +96,7 @@
       height: 3rem;
     }
 
-    & .header-id-input {
+    & .header-id-form {
       width: 100%;
     }
   }
